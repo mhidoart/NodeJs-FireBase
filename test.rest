@@ -1,0 +1,38 @@
+POST http://localhost:8080/api/student
+Content-Type: application/json
+
+{
+    "firstName": "ASSABBANE2",
+    "lastName": "Mehdi",
+    "fatherName": "Mohammed",
+    "classEnrolled": "NodeJS",
+    "age": "24",
+    "phoneNumber": "0752188895",
+    "subject": "wtf is that",
+    "year": "2021",
+    "semester": "s4",
+    "status": "good"
+}
+
+### get all students
+
+GET http://localhost:8080/api/students
+
+
+### get student by id
+
+GET http://localhost:8080/api/student/JR136vxISXYkRdyYlipP
+
+
+
+### update student by ID
+PUT  http://localhost:8080/api/student/efl16NmvCG1t65pBYpom
+Content-Type: application/json
+
+{
+      "phoneNumber": "-1111111111",
+    "subject": "something",
+    "year": "2020",
+    "semester": "s17",
+    "status": "nice very nice "
+}
